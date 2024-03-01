@@ -354,7 +354,7 @@ const Feed = () => {
                         <p><strong>Name:</strong> {favor.name}</p>
                         <p><strong>Telegram:</strong> {favor.telegram}</p>
                         <p><strong>Favors I make:</strong> {favor.favorsMake.join(', ')}</p>
-                        <p><strong>Favors I make:</strong> {favor.favorsNeed.join(', ')}</p>
+                        <p><strong>Favors I need:</strong> {favor.favorsNeed.join(', ')}</p>
                     </div>
                 ))}
             </div>
