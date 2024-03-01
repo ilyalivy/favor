@@ -120,7 +120,7 @@ const Feed = () => {
                             className="flex flex-col space-y-6"
                         >
                             <input
-                                className="border-2 p-3 rounded"
+                                className="border-2 p-3 rounded font"
                                 type="text"
                                 placeholder="Name"
                                 value={formData.name}
@@ -351,10 +351,10 @@ const Feed = () => {
             <div className="mt-6 space-y-4">
                 {favorsList.map((favor, index) => (
                     <div key={index} className="border-2 p-4 rounded shadow">
-                        <p>Name: {favor.name}</p>
-                        <p>Telegram: {favor.telegram}</p>
-                        <p>Favors I make: {favor.favorsMake.join(', ')}</p>
-                        <p>Favors I need: {favor.favorsNeed.join(', ')}</p>
+                        <p><strong>Name:</strong> {favor.name}</p>
+                        <p><strong>Telegram:</strong> {favor.telegram}</p>
+                        <p><strong>Favors I make:</strong> {favor.favorsMake.join(', ')}</p>
+                        <p><strong>Favors I make:</strong> {favor.favorsNeed.join(', ')}</p>
                     </div>
                 ))}
             </div>
